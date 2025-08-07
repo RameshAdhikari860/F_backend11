@@ -24,6 +24,9 @@ router.get("/test",(req,res)=>{
     res.send("I am test created")
 })
 
+// git add .
+//git commit -m "messge"
+//git push
 
 
 
