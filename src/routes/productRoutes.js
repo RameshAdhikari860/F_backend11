@@ -12,13 +12,13 @@ import { isAdmin } from "../middleware/isAdmin.js";
 
 const router = express.Router();
 
-router.get("/",isLoggedIn,isAdmin ,getAllProduct);
+router.get("/",getAllProduct);
 
 
 
 
 
-router.get("/test",isLoggedIn,(req,res)=>{
+router.get("/test",(req,res)=>{
     const myNameIs = req.myName
     console.log("i am test function ")
     res.send("I am test created")
